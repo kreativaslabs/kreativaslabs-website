@@ -1,3 +1,22 @@
+@font-face{
+  font-family:'KG Perfect';
+  src:url('fonts/KGPerfectPenmanship.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Lato', sans-serif;
+  background:#f6f1e8;
+  color:#1f1f1f;
+}
+
 /* NAVBAR */
 .nav{
   display:flex;
@@ -15,7 +34,7 @@
   height:120px;
 }
 
-/* MENU DESKTOP */
+/* MENU */
 .menu{
   display:flex;
   gap:18px;
@@ -24,9 +43,10 @@
   margin-right:25px;
 }
 
+/* 🔥 FIX TIPOGRAFÍA */
 .menu a{
   text-decoration:none;
-  font-family:'KG Perfect';
+  font-family:'KG Perfect', sans-serif;
   color:#1f1f1f;
   font-size:18px;
 }
@@ -61,17 +81,19 @@
   justify-content:center;
 }
 
+/* WHATSAPP */
 .whatsapp-icon svg{
   fill:currentColor;
 }
 
+/* HAMBURGUESA */
 .hamburger{
   display:none;
   font-size:28px;
   cursor:pointer;
 }
 
-/* 🔥 FIX REAL DEL MENÚ MÓVIL */
+/* MOBILE */
 @media(max-width:768px){
 
   .logo img{
@@ -82,7 +104,6 @@
     display:block;
   }
 
-  /* MENÚ OCULTO BASE */
   .menu{
     display:none;
     position:absolute;
@@ -95,10 +116,8 @@
     padding:20px;
     gap:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    z-index:999;
   }
 
-  /* CUANDO SE ABRE */
   .menu.show{
     display:flex;
   }
