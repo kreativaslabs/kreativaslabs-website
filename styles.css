@@ -15,62 +15,46 @@ body{
   color:#1f1f1f;
 }
 
-/* NAVBAR MÁS ANGOSTA */
+/* NAVBAR */
 .nav{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:8px 5%; /* 🔥 más angosta */
+  padding:8px 6%;
   background:white;
   position:sticky;
   top:0;
   z-index:1000;
 }
 
-/* LOGO MÁS GRANDE */
+/* LOGO */
 .logo img{
-  height:125px; /* 🔥 MÁS PROTAGONISTA */
+  height:120px;
 }
 
-/* CENTRO TOTAL */
-.nav-center{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex:1;
-  gap:25px;
-}
-
-/* MENU */
-.menu{
-  display:flex;
-  gap:22px;
-}
-
-.menu a{
-  font-family:'KG Perfect';
-  text-decoration:none;
-  color:#1f1f1f;
-  font-size:18px;
-  position:relative;
-}
-
-/* ICONOS */
+/* ICONOS DERECHA */
 .nav-icons{
   display:flex;
-  gap:14px;
   align-items:center;
+  gap:16px;
+  margin-left:auto;
 }
 
 /* ICONOS */
 .icon{
-  color:#1f1f1f;
   display:flex;
   align-items:center;
+  color:#1f1f1f;
   position:relative;
+  text-decoration:none;
 }
 
-/* CART COUNT */
+/* WHATSAPP FIX (IMPORTANTE) */
+.whatsapp-icon svg{
+  fill:currentColor;
+}
+
+/* CARRITO CONTADOR */
 .cart-count{
   position:absolute;
   top:-6px;
@@ -85,73 +69,37 @@ body{
   justify-content:center;
 }
 
-/* HERO */
-.hero{
-  text-align:center;
-  padding:110px 8%;
-}
-
-.hero h1{
-  font-size:52px;
-}
-
-.hero p{
-  margin-top:15px;
-  opacity:0.8;
-}
-
-/* BOTONES */
-.hero-buttons{
-  margin-top:25px;
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-/* MOBILE */
+/* HAMBURGUESA */
 .hamburger{
   display:none;
   font-size:28px;
   cursor:pointer;
 }
 
-/* RESPONSIVE */
+/* HERO (TEMPORAL) */
+.hero{
+  text-align:center;
+  padding:80px 8%;
+}
+
+/* MOBILE */
 @media(max-width:768px){
 
-  .nav{
-    padding:10px 4%;
-  }
-
   .logo img{
-    height:85px;
+    height:80px;
   }
 
   .hamburger{
     display:block;
   }
 
-  .nav-center{
-    position:absolute;
-    top:80px;
-    left:0;
-    right:0;
-    background:white;
-    flex-direction:column;
-    display:none;
-    padding:20px;
-  }
-
-  .nav-center.show{
-    display:flex;
-  }
-
-  .menu{
-    flex-direction:column;
-    align-items:center;
-  }
-
   .nav-icons{
-    justify-content:center;
+    gap:12px;
+  }
+
+  /* OCULTAR/MOSTRAR ICONOS COMO MENÚ SIMPLE */
+  .nav-icons{
+    display:flex;
   }
 
 }
