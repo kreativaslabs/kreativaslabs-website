@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Kreativas Labs</title>
 
   <link rel="stylesheet" href="styles.css">
@@ -20,33 +19,49 @@
       <img src="images/logo_principal.png" alt="Kreativas Labs">
     </div>
 
-    <!-- HAMBURGUER BUTTON (MÓVIL) -->
-    <div class="hamburger" onclick="toggleMenu()">
-      ☰
-    </div>
+    <!-- HAMBURGER (MÓVIL) -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <!-- MENU -->
-    <nav class="menu" id="menu">
+    <!-- RIGHT GROUP -->
+    <div class="right-nav">
 
-      <a class="active" href="#">Inicio</a>
-      <a href="#">Catálogo</a>
-      <a href="#">Sobre nosotros</a>
-      <a href="#">Contacto</a>
-
-    </nav>
-
-    <!-- ICONOS -->
-    <div class="nav-icons">
-
-      <!-- CARRITO -->
-      <a class="cart-icon" href="#">
-        🛒
-        <span class="cart-count">0</span>
-      </a>
+      <!-- MENU -->
+      <nav class="menu" id="menu">
+        <a class="active" href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contacto</a>
+      </nav>
 
       <!-- WHATSAPP -->
       <a class="whatsapp-icon" href="https://wa.me/584141740024" target="_blank">
-        💬
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="22" height="22"
+        viewBox="0 0 24 24"
+        fill="currentColor">
+
+          <path d="M20.52 3.48A11.79 11.79 0 0 0 12.04 0C5.41 0 .04 5.37.04 12c0 2.11.55 4.17 1.59 5.99L0 24l6.17-1.61A11.93 11.93 0 0 0 12.04 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.52-8.52Z"/>
+        </svg>
+
+      </a>
+
+      <!-- CART -->
+      <a class="cart-icon" href="#">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="22" height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2">
+
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 .61h9.72a1 1 0 0 0 1-.76L23 6H6"/>
+        </svg>
+
+        <span class="cart-count">0</span>
       </a>
 
     </div>
@@ -55,25 +70,17 @@
 
   <!-- HERO -->
   <section class="hero">
-
     <h1>Papelería creativa hecha con intención ✨</h1>
-
-    <p>
-      Libros para colorear, cotillones, imprimibles y detalles únicos para momentos especiales.
-    </p>
+    <p>Libros para colorear, cotillones, imprimibles y detalles únicos para momentos especiales.</p>
 
     <div class="hero-buttons">
-
       <a class="btn-primary" href="#">Ver catálogo</a>
       <a class="btn-secondary" href="#">Personalizar pedido</a>
-
     </div>
-
   </section>
 
   <!-- CATEGORÍAS -->
   <section class="categories">
-
     <div class="category-card">Libros para colorear</div>
     <div class="category-card">Cotillones</div>
     <div class="category-card">Bolsas</div>
@@ -81,10 +88,8 @@
     <div class="category-card">Tarjetas</div>
     <div class="category-card">Etiquetas</div>
     <div class="category-card">Imprimibles</div>
-
   </section>
 
-  <!-- SCRIPT MENU -->
   <script>
     function toggleMenu(){
       document.getElementById("menu").classList.toggle("show");
