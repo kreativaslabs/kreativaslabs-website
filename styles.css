@@ -109,10 +109,15 @@ body{
 
 .cart-icon svg,
 .whatsapp-icon svg{
-  width:24px;
-  height:24px;
+  width:26px;
+  height:26px;
 }
 
+/* WHATSAPP */
+
+.whatsapp-icon{
+  color:#1f1f1f;
+}
 /* CONTADOR */
 
 .cart-count{
