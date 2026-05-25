@@ -1,8 +1,6 @@
 @font-face{
   font-family:'KG Perfect';
   src:url('fonts/KGPerfectPenmanship.ttf') format('truetype');
-  font-weight:normal;
-  font-style:normal;
 }
 
 *{
@@ -43,12 +41,37 @@ body{
   margin-right:25px;
 }
 
-/* 🔥 FIX TIPOGRAFÍA */
+/* LINKS */
 .menu a{
   text-decoration:none;
   font-family:'KG Perfect', sans-serif;
   color:#1f1f1f;
   font-size:18px;
+  position:relative;
+  padding-bottom:5px;
+}
+
+/* 🔥 LINEA AMARILLA */
+.menu a::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:3px;
+  background:#f5c84c;
+  transition:0.3s;
+  border-radius:10px;
+}
+
+/* HOVER */
+.menu a:hover::after{
+  width:100%;
+}
+
+/* ACTIVO */
+.menu a.active::after{
+  width:100%;
 }
 
 /* ICONOS */
@@ -58,6 +81,7 @@ body{
   gap:14px;
 }
 
+/* ICONOS */
 .icon{
   display:flex;
   align-items:center;
@@ -104,18 +128,20 @@ body{
     display:block;
   }
 
+  /* MENU FULL SCREEN */
   .menu{
     display:none;
-    position:absolute;
-    top:85px;
+    position:fixed;
+    top:0;
     left:0;
-    right:0;
+    width:100%;
+    height:100vh;
     background:white;
     flex-direction:column;
-    text-align:center;
-    padding:20px;
-    gap:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    z-index:9999;
   }
 
   .menu.show{
