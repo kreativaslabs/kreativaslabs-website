@@ -14,8 +14,9 @@ body{
   background:white;
 }
 
-.logo{
-  font-weight:700;
+.logo img{
+  height:60px;
+  width:auto;
 }
 
 .menu{
