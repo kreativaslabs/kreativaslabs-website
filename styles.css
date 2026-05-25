@@ -1,11 +1,7 @@
-/* FUENTES */
-
 @font-face{
   font-family:'KG Perfect';
   src:url('fonts/KGPerfectPenmanship.ttf');
 }
-
-/* RESET */
 
 *{
   margin:0;
@@ -13,16 +9,13 @@
   box-sizing:border-box;
 }
 
-/* BODY */
-
 body{
   font-family:'Lato', sans-serif;
   background:#f6f1e8;
   color:#1f1f1f;
 }
 
-/* NAVBAR */
-
+/* NAV */
 .nav{
   display:flex;
   align-items:center;
@@ -31,36 +24,34 @@ body{
   background:white;
   position:sticky;
   top:0;
-  z-index:1000;
 }
 
 /* LOGO */
-
 .logo img{
   height:110px;
-  width:auto;
+}
+
+/* RIGHT SIDE */
+.right-nav{
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
 /* MENU */
-
 .menu{
   display:flex;
-  gap:28px;
-  margin-left:auto;
+  gap:24px;
 }
 
-/* LINKS */
-
 .menu a{
+  font-family:'KG Perfect';
   text-decoration:none;
   color:#1f1f1f;
-  font-family:'KG Perfect';
-  font-size:20px;
+  font-size:18px;
   position:relative;
   padding-bottom:6px;
 }
-
-/* LINEA AMARILLA */
 
 .menu a::after{
   content:'';
@@ -78,40 +69,30 @@ body{
   width:100%;
 }
 
-/* ICONOS */
-
-.nav-icons{
+/* ICONS */
+.whatsapp-icon,
+.cart-icon{
+  color:#1f1f1f;
+  position:relative;
   display:flex;
   align-items:center;
-  gap:16px;
-  margin-left:20px;
-}
-
-.cart-icon,
-.whatsapp-icon{
-  text-decoration:none;
-  font-size:22px;
-  position:relative;
-  color:#1f1f1f;
 }
 
 .cart-count{
   position:absolute;
-  top:-8px;
-  right:-10px;
+  top:-6px;
+  right:-8px;
   background:#f5c84c;
-  color:#1f1f1f;
-  width:18px;
-  height:18px;
+  width:16px;
+  height:16px;
   border-radius:50%;
-  font-size:12px;
+  font-size:11px;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
 }
 
 /* HERO */
-
 .hero{
   text-align:center;
   padding:100px 8%;
@@ -121,41 +102,7 @@ body{
   font-size:48px;
 }
 
-.hero p{
-  margin-top:15px;
-  max-width:600px;
-  margin-left:auto;
-  margin-right:auto;
-  line-height:1.6;
-}
-
-/* BOTONES */
-
-.hero-buttons{
-  margin-top:25px;
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-.btn-primary{
-  background:#3a97c9;
-  color:white;
-  padding:14px 24px;
-  border-radius:30px;
-  text-decoration:none;
-}
-
-.btn-secondary{
-  background:#f5c84c;
-  color:#1f1f1f;
-  padding:14px 24px;
-  border-radius:30px;
-  text-decoration:none;
-}
-
-/* CATEGORIAS */
-
+/* CATEGORIES */
 .categories{
   padding:80px 8%;
   display:grid;
@@ -163,26 +110,14 @@ body{
   gap:20px;
 }
 
-.category-card{
-  background:white;
-  padding:40px 20px;
-  border-radius:20px;
-  text-align:center;
-}
-
-/* HAMBURGER (OCULTO EN DESKTOP) */
-
+/* MOBILE */
 .hamburger{
   display:none;
   font-size:28px;
   cursor:pointer;
 }
 
-/* ========================= */
-/* 📱 MOBILE RESPONSIVE */
-/* ========================= */
-
-@media (max-width: 768px){
+@media(max-width:768px){
 
   .nav{
     padding:10px 4%;
@@ -196,47 +131,24 @@ body{
     display:block;
   }
 
-  .menu{
-    display:none;
+  .right-nav{
     position:absolute;
     top:80px;
-    left:0;
     right:0;
+    left:0;
     background:white;
     flex-direction:column;
     padding:20px;
-    gap:15px;
+    display:none;
   }
 
-  .menu.show{
+  .right-nav.show{
     display:flex;
   }
 
-  .nav-icons{
-    margin-left:auto;
-  }
-
-  .hero{
-    padding:60px 6%;
-  }
-
-  .hero h1{
-    font-size:28px;
-  }
-
-  .hero-buttons{
+  .menu{
     flex-direction:column;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    text-align:center;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2, 1fr);
-    padding:40px 6%;
+    align-items:center;
   }
 
 }
