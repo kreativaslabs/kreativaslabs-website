@@ -19,8 +19,8 @@ body{
 .nav{
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  padding:6px 6%; /* más angosta */
+  justify-content:space-between; /* 🔥 clave */
+  padding:6px 6%;
   background:white;
   position:sticky;
   top:0;
@@ -32,21 +32,19 @@ body{
   height:120px;
 }
 
-/* MENU CENTRADO */
+/* MENU DESKTOP */
 .menu{
   display:flex;
   gap:22px;
   align-items:center;
-  flex:1;
-  justify-content:center;
 }
 
+/* texto menú */
 .menu a{
   text-decoration:none;
   font-family:'KG Perfect';
   color:#1f1f1f;
   font-size:18px;
-  position:relative;
 }
 
 /* ICONOS DERECHA */
@@ -65,21 +63,6 @@ body{
   text-decoration:none;
 }
 
-/* CART COUNT */
-.cart-count{
-  position:absolute;
-  top:-6px;
-  right:-8px;
-  background:#f5c84c;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  font-size:11px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
 /* WHATSAPP FIX */
 .whatsapp-icon svg{
   fill:currentColor;
@@ -92,12 +75,6 @@ body{
   cursor:pointer;
 }
 
-/* HERO */
-.hero{
-  text-align:center;
-  padding:70px 8%;
-}
-
 /* MOBILE */
 @media(max-width:768px){
 
@@ -105,12 +82,29 @@ body{
     height:80px;
   }
 
-  .menu{
-    display:none;
-  }
-
   .hamburger{
     display:block;
   }
 
+  /* MENÚ OCULTO POR DEFECTO */
+  .menu{
+    display:none;
+    position:absolute;
+    top:90px;
+    left:0;
+    right:0;
+    background:white;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+  }
+
+  /* CUANDO SE ABRE */
+  .menu.show{
+    display:flex;
+  }
+
+  .nav-icons{
+    gap:10px;
+  }
 }
