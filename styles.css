@@ -1,25 +1,7 @@
-@font-face{
-  font-family:'KG Perfect';
-  src:url('fonts/KGPerfectPenmanship.ttf');
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Lato', sans-serif;
-  background:#f6f1e8;
-  color:#1f1f1f;
-}
-
-/* NAVBAR */
 .nav{
   display:flex;
-  align-items:center;
   justify-content:space-between;
+  align-items:center;
   padding:8px 6%;
   background:white;
   position:sticky;
@@ -32,74 +14,54 @@ body{
   height:120px;
 }
 
-/* ICONOS DERECHA */
-.nav-icons{
+/* MENU DESKTOP */
+.menu{
   display:flex;
+  gap:20px;
   align-items:center;
-  gap:16px;
-  margin-left:auto;
 }
 
-/* ICONOS */
-.icon{
-  display:flex;
-  align-items:center;
-  color:#1f1f1f;
-  position:relative;
+.menu a{
   text-decoration:none;
+  font-family:'KG Perfect';
+  color:#1f1f1f;
+  font-size:18px;
 }
 
-/* WHATSAPP FIX (IMPORTANTE) */
-.whatsapp-icon svg{
-  fill:currentColor;
-}
-
-/* CARRITO CONTADOR */
-.cart-count{
-  position:absolute;
-  top:-6px;
-  right:-8px;
-  background:#f5c84c;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  font-size:11px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-/* HAMBURGUESA */
+/* HAMBURGER */
 .hamburger{
   display:none;
   font-size:28px;
   cursor:pointer;
 }
 
-/* HERO (TEMPORAL) */
-.hero{
-  text-align:center;
-  padding:80px 8%;
-}
-
-/* MOBILE */
+/* MÓVIL */
 @media(max-width:768px){
-
-  .logo img{
-    height:80px;
-  }
 
   .hamburger{
     display:block;
   }
 
-  .nav-icons{
-    gap:12px;
+  .menu{
+    position:absolute;
+    top:90px;
+    left:0;
+    right:0;
+    background:white;
+    flex-direction:column;
+    display:none;
+    padding:20px;
+    text-align:center;
   }
 
-  /* OCULTAR/MOSTRAR ICONOS COMO MENÚ SIMPLE */
-  .nav-icons{
+  .menu.show{
     display:flex;
   }
 
+  .menu-icons{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
 }
