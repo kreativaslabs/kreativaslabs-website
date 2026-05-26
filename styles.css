@@ -27,9 +27,9 @@ body{
   z-index:1000;
 }
 
-/* 🔥 LOGO AJUSTE REAL DE ALINEACIÓN */
+/* LOGO */
 .logo{
-  margin-left:6px; /* <- clave para alinearlo con hero */
+  margin-left:6px;
 }
 
 .logo img{
@@ -46,6 +46,7 @@ body{
   margin-right:25px;
 }
 
+/* LINKS */
 .menu a{
   text-decoration:none;
   font-family:'KG Perfect', sans-serif;
@@ -55,6 +56,7 @@ body{
   padding-bottom:5px;
 }
 
+/* LINEA AMARILLA */
 .menu a::after{
   content:'';
   position:absolute;
@@ -87,6 +89,15 @@ body{
   text-decoration:none;
 }
 
+/* ICONO WHATSAPP */
+.whatsapp-icon img{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  display:block;
+}
+
+/* CARRITO */
 .cart-count{
   position:absolute;
   top:-6px;
@@ -99,6 +110,13 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+/* HAMBURGUESA */
+.hamburger{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
 }
 
 /* HERO */
@@ -116,6 +134,7 @@ body{
   max-width:640px;
 }
 
+/* ETIQUETA */
 .hero-tag{
   display:inline-block;
   background:#f5c84c;
@@ -126,6 +145,7 @@ body{
   margin-bottom:18px;
 }
 
+/* TITULO */
 .hero h1{
   font-family:'KG Perfect', sans-serif;
   font-size:54px;
@@ -133,6 +153,7 @@ body{
   margin-bottom:14px;
 }
 
+/* DESCRIPCION */
 .hero-description{
   font-family:'Lato', sans-serif;
   font-size:18px;
@@ -148,6 +169,7 @@ body{
   margin-bottom:30px;
 }
 
+/* BOTON CATALOGO */
 .catalog-btn{
   background:#3a97c9;
   color:white;
@@ -158,6 +180,7 @@ body{
   font-weight:700;
 }
 
+/* BOTON PERSONALIZAR */
 .custom-btn{
   display:flex;
   align-items:center;
@@ -171,7 +194,13 @@ body{
   font-weight:700;
 }
 
-/* 🔥 BENEFICIOS NUEVO DISEÑO */
+.custom-btn img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+}
+
+/* BENEFICIOS */
 .hero-features{
   display:flex;
   gap:42px;
@@ -186,16 +215,21 @@ body{
   min-width:160px;
 }
 
-/* ICONOS OUTLINE */
-.feature-icon svg{
-  width:26px;
-  height:26px;
-  stroke:#1f1f1f;
-  fill:none;
-  stroke-width:2;
+/* ICONOS */
+.feature-icon img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
+  display:block;
 }
 
-/* TEXTOS DOBLE LINEA */
+/* LAPIZ MAS GRANDE */
+.feature-item:nth-child(2) .feature-icon img{
+  width:28px;
+  height:28px;
+}
+
+/* TEXTOS */
 .feature-text{
   display:flex;
   flex-direction:column;
@@ -207,12 +241,14 @@ body{
   font-family:'Lato', sans-serif;
   font-size:13px;
   font-weight:600;
+  white-space:nowrap;
 }
 
 .feature-text .bottom{
   font-family:'Lato', sans-serif;
   font-size:12px;
   color:#666;
+  white-space:nowrap;
 }
 
 /* DERECHA */
@@ -240,6 +276,10 @@ body{
 
   .logo img{
     height:80px;
+  }
+
+  .hamburger{
+    display:block;
   }
 
   .menu{
@@ -278,5 +318,14 @@ body{
   .hero-features{
     justify-content:center;
     flex-wrap:wrap;
+  }
+
+  .feature-item{
+    justify-content:flex-start;
+  }
+
+  .hero-image-placeholder{
+    width:100%;
+    height:320px;
   }
 }
