@@ -27,9 +27,14 @@ body{
   z-index:1000;
 }
 
-/* LOGO */
+/* 🔥 LOGO AJUSTE REAL DE ALINEACIÓN */
+.logo{
+  margin-left:6px; /* <- clave para alinearlo con hero */
+}
+
 .logo img{
   height:120px;
+  display:block;
 }
 
 /* MENU */
@@ -41,7 +46,6 @@ body{
   margin-right:25px;
 }
 
-/* LINKS */
 .menu a{
   text-decoration:none;
   font-family:'KG Perfect', sans-serif;
@@ -51,7 +55,6 @@ body{
   padding-bottom:5px;
 }
 
-/* LINEA AMARILLA */
 .menu a::after{
   content:'';
   position:absolute;
@@ -64,10 +67,7 @@ body{
   border-radius:10px;
 }
 
-.menu a:hover::after{
-  width:100%;
-}
-
+.menu a:hover::after,
 .menu a.active::after{
   width:100%;
 }
@@ -87,7 +87,6 @@ body{
   text-decoration:none;
 }
 
-/* CARRITO */
 .cart-count{
   position:absolute;
   top:-6px;
@@ -100,18 +99,6 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
-/* WHATSAPP */
-.whatsapp-icon svg{
-  fill:currentColor;
-}
-
-/* HAMBURGUESA */
-.hamburger{
-  display:none;
-  font-size:28px;
-  cursor:pointer;
 }
 
 /* HERO */
@@ -129,7 +116,6 @@ body{
   max-width:640px;
 }
 
-/* ETIQUETA */
 .hero-tag{
   display:inline-block;
   background:#f5c84c;
@@ -137,24 +123,21 @@ body{
   border-radius:999px;
   font-family:'Lato', sans-serif;
   font-weight:700;
-  color:#1f1f1f;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
-/* TITULO */
 .hero h1{
   font-family:'KG Perfect', sans-serif;
   font-size:54px;
   line-height:1.05;
-  margin-bottom:16px;
+  margin-bottom:14px;
 }
 
-/* DESCRIPCION */
 .hero-description{
   font-family:'Lato', sans-serif;
-  font-size:19px;
+  font-size:18px;
   color:#555;
-  margin-bottom:28px;
+  margin-bottom:26px;
 }
 
 /* BOTONES */
@@ -162,10 +145,9 @@ body{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
-  margin-bottom:34px;
+  margin-bottom:30px;
 }
 
-/* BOTON CATALOGO */
 .catalog-btn{
   background:#3a97c9;
   color:white;
@@ -176,7 +158,6 @@ body{
   font-weight:700;
 }
 
-/* BOTON PERSONALIZAR */
 .custom-btn{
   display:flex;
   align-items:center;
@@ -190,47 +171,31 @@ body{
   font-weight:700;
 }
 
-/* BENEFICIOS */
+/* 🔥 BENEFICIOS NUEVO DISEÑO */
 .hero-features{
   display:flex;
-  align-items:flex-start;
-  gap:34px;
+  gap:42px;
   flex-wrap:nowrap;
 }
 
 /* ITEM */
 .feature-item{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   gap:10px;
-  min-width:auto;
+  min-width:160px;
 }
 
 /* ICONOS OUTLINE */
-.feature-icon{
-  width:38px;
-  height:38px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-}
-
 .feature-icon svg{
-  width:24px;
-  height:24px;
+  width:26px;
+  height:26px;
+  stroke:#1f1f1f;
+  fill:none;
   stroke-width:2;
 }
 
-.feature-icon.yellow{
-  color:#f5c84c;
-}
-
-.feature-icon.blue{
-  color:#3a97c9;
-}
-
-/* TEXTOS */
+/* TEXTOS DOBLE LINEA */
 .feature-text{
   display:flex;
   flex-direction:column;
@@ -238,15 +203,15 @@ body{
   line-height:1.2;
 }
 
-.feature-text h3{
-  font-family:'Lato', sans-serif;
-  font-size:15px;
-  margin-bottom:2px;
-}
-
-.feature-text p{
+.feature-text .top{
   font-family:'Lato', sans-serif;
   font-size:13px;
+  font-weight:600;
+}
+
+.feature-text .bottom{
+  font-family:'Lato', sans-serif;
+  font-size:12px;
   color:#666;
 }
 
@@ -257,7 +222,6 @@ body{
   justify-content:center;
 }
 
-/* IMAGEN */
 .hero-image-placeholder{
   width:430px;
   height:500px;
@@ -276,10 +240,6 @@ body{
 
   .logo img{
     height:80px;
-  }
-
-  .hamburger{
-    display:block;
   }
 
   .menu{
@@ -317,15 +277,6 @@ body{
 
   .hero-features{
     justify-content:center;
-    gap:24px;
-  }
-
-  .feature-item{
-    justify-content:flex-start;
-  }
-
-  .hero-image-placeholder{
-    width:100%;
-    height:320px;
+    flex-wrap:wrap;
   }
 }
