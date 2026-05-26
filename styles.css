@@ -119,14 +119,14 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:45px 6%;
+  padding:38px 4%;
   background:#f6f1e8;
-  gap:35px;
+  gap:28px;
 }
 
 /* IZQUIERDA */
 .hero-left{
-  max-width:590px;
+  max-width:640px;
 }
 
 /* ETIQUETA */
@@ -193,16 +193,17 @@ body{
 /* BENEFICIOS */
 .hero-features{
   display:flex;
-  gap:28px;
-  flex-wrap:wrap;
+  align-items:flex-start;
+  gap:34px;
+  flex-wrap:nowrap;
 }
 
 /* ITEM */
 .feature-item{
   display:flex;
   align-items:center;
-  gap:12px;
-  min-width:180px;
+  gap:10px;
+  min-width:auto;
 }
 
 /* ICONOS OUTLINE */
