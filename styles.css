@@ -15,7 +15,10 @@ body{
   color:#1f1f1f;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
+
 .nav{
   display:flex;
   align-items:center;
@@ -89,7 +92,7 @@ body{
   text-decoration:none;
 }
 
-/* ICONO WHATSAPP */
+/* WHATSAPP */
 .whatsapp-icon img{
   width:24px;
   height:24px;
@@ -119,14 +122,17 @@ body{
   cursor:pointer;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
+
 .hero{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:38px 4%;
+  padding:38px 6%;
   background:#f6f1e8;
-  gap:28px;
+  gap:30px;
 }
 
 /* IZQUIERDA */
@@ -166,7 +172,7 @@ body{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
-  margin-bottom:30px;
+  margin-bottom:32px;
 }
 
 /* BOTON CATALOGO */
@@ -184,7 +190,7 @@ body{
 .custom-btn{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   border:2px solid #1f1f1f;
   color:#1f1f1f;
   text-decoration:none;
@@ -198,6 +204,7 @@ body{
   width:24px;
   height:24px;
   object-fit:contain;
+  display:block;
 }
 
 /* BENEFICIOS */
@@ -216,7 +223,14 @@ body{
   width:190px;
 }
 
-/* ICONOS */
+/* ICONO */
+.feature-icon{
+  min-width:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
 .feature-icon img{
   width:42px;
   height:42px;
@@ -225,25 +239,20 @@ body{
   opacity:0.95;
 }
 
-.feature-icon{
-  min-width:36px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.feature-item:nth-child(3) .feature-icon img{
-  width:44px;
-  height:44px;
-}
-
+/* CORAZON */
 .feature-item:nth-child(1) .feature-icon img{
   width:44px;
   height:44px;
 }
 
-/* LAPIZ MAS GRANDE */
+/* LAPIZ */
 .feature-item:nth-child(2) .feature-icon img{
+  width:44px;
+  height:44px;
+}
+
+/* CAJA */
+.feature-item:nth-child(3) .feature-icon img{
   width:44px;
   height:44px;
 }
@@ -282,17 +291,105 @@ body{
   height:500px;
   background:white;
   border-radius:35px;
+}
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categories-section{
+  background:white;
+  padding:90px 6%;
+}
+
+/* TITULO */
+.categories-title{
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#999;
-  font-family:'Lato', sans-serif;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  gap:22px;
+  margin-bottom:55px;
 }
 
-/* MOBILE */
+.categories-title h2{
+  font-family:'KG Perfect', sans-serif;
+  font-size:42px;
+  color:#1f1f1f;
+  text-align:center;
+}
+
+/* LINEAS AZULES */
+.title-line{
+  width:90px;
+  height:2px;
+  background:#3a97c9;
+  opacity:0.35;
+  border-radius:20px;
+}
+
+/* LINEA AMARILLA */
+.yellow-line{
+  width:120px;
+  height:4px;
+  background:#f5c84c;
+  border-radius:20px;
+  margin:10px auto 0;
+}
+
+/* GRID */
+.categories-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:28px;
+}
+
+/* CARD */
+.category-card{
+  background:rgba(58,151,201,0.06);
+  border-radius:28px;
+  overflow:hidden;
+  transition:0.3s;
+  cursor:pointer;
+  border:1px solid rgba(58,151,201,0.08);
+}
+
+.category-card:hover{
+  transform:translateY(-5px);
+}
+
+/* IMAGEN */
+.category-image{
+  width:100%;
+  height:240px;
+  background:#fafafa;
+}
+
+/* NOMBRE */
+.category-name{
+  padding:20px;
+  text-align:center;
+  font-family:'Lato', sans-serif;
+  font-size:16px;
+  font-weight:600;
+  color:#1f1f1f;
+  background:rgba(245,200,76,0.12);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1024px){
+
+  .categories-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
 @media(max-width:768px){
 
+  /* NAV */
   .logo img{
     height:80px;
   }
@@ -320,6 +417,7 @@ body{
     display:flex;
   }
 
+  /* HERO */
   .hero{
     flex-direction:column;
     text-align:center;
@@ -335,16 +433,46 @@ body{
   }
 
   .hero-features{
-    justify-content:center;
-    flex-wrap:wrap;
+    flex-direction:column;
+    gap:24px;
+    align-items:flex-start;
+    margin:auto;
   }
 
   .feature-item{
-    justify-content:flex-start;
+    width:100%;
   }
 
   .hero-image-placeholder{
     width:100%;
     height:320px;
   }
+
+  /* CATEGORIAS */
+  .categories-section{
+    padding:70px 6%;
+  }
+
+  .categories-title{
+    gap:14px;
+    margin-bottom:40px;
+  }
+
+  .categories-title h2{
+    font-size:32px;
+  }
+
+  .title-line{
+    width:45px;
+  }
+
+  .categories-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .category-image{
+    height:220px;
+  }
+
 }
