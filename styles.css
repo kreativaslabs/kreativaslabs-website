@@ -218,8 +218,8 @@ body{
 
 /* ICONOS */
 .feature-icon img{
-  width:36px;
-  height:36px;
+  width:42px;
+  height:42px;
   object-fit:contain;
   display:block;
   opacity:0.95;
@@ -233,19 +233,19 @@ body{
 }
 
 .feature-item:nth-child(3) .feature-icon img{
-  width:38px;
-  height:38px;
+  width:44px;
+  height:44px;
 }
 
 .feature-item:nth-child(1) .feature-icon img{
-  width:38px;
-  height:38px;
+  width:44px;
+  height:44px;
 }
 
 /* LAPIZ MAS GRANDE */
 .feature-item:nth-child(2) .feature-icon img{
-  width:34px;
-  height:34px;
+  width:44px;
+  height:44px;
 }
 
 /* TEXTOS */
