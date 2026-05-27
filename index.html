@@ -11,186 +11,307 @@
 
 <body>
 
-<header class="nav">
+  <!-- =========================
+       NAVBAR
+  ========================== -->
 
-  <!-- LOGO -->
-  <div class="logo">
-    <img src="images/logo_principal.png" alt="Kreativas Labs">
-  </div>
+  <header class="nav">
 
-  <!-- MENÚ -->
-  <nav class="menu" id="menu">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/logo_principal.png" alt="Kreativas Labs">
+    </div>
 
-    <a href="#" class="active">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Sobre nosotros</a>
-    <a href="#">Contacto</a>
+    <!-- MENU -->
+    <nav class="menu" id="menu">
 
-  </nav>
+      <a href="#" class="active">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Sobre nosotros</a>
+      <a href="#">Contacto</a>
 
-  <!-- ICONOS -->
-  <div class="nav-icons">
+    </nav>
 
-    <!-- WHATSAPP -->
-    <a class="icon whatsapp-icon"
-    href="https://wa.me/584141740024"
-    target="_blank">
+    <!-- ICONOS -->
+    <div class="nav-icons">
 
-      <img src="images/whatsapp.png" alt="WhatsApp">
-
-    </a>
-
-    <!-- CARRITO -->
-    <a class="icon cart-icon" href="#">
-
-      <svg xmlns="http://www.w3.org/2000/svg"
-      width="22"
-      height="22"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2">
-
-        <circle cx="9" cy="21" r="1"/>
-        <circle cx="20" cy="21" r="1"/>
-        <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 .61h9.72a1 1 0 0 0 1-.76L23 6H6"/>
-
-      </svg>
-
-      <span class="cart-count">0</span>
-
-    </a>
-
-    <!-- HAMBURGUESA -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-  </div>
-
-</header>
-
-<!-- HERO -->
-<section class="hero">
-
-  <!-- IZQUIERDA -->
-  <div class="hero-left">
-
-    <span class="hero-tag">
-      PAPELERIA CREATIVA
-    </span>
-
-    <h1>
-      Detalles creativos que inspiran cada día
-    </h1>
-
-    <p class="hero-description">
-      El detalle perfecto para tus momentos especiales
-    </p>
-
-    <!-- BOTONES -->
-    <div class="hero-buttons">
-
-      <a href="#" class="catalog-btn">
-        Ver catálogo →
-      </a>
-
-      <a href="https://wa.me/584141740024"
-      target="_blank"
-      class="custom-btn">
+      <!-- WHATSAPP -->
+      <a class="icon whatsapp-icon"
+      href="https://wa.me/584141740024"
+      target="_blank">
 
         <img src="images/whatsapp.png" alt="WhatsApp">
 
-        Personalizar tu pedido
+      </a>
+
+      <!-- CARRITO -->
+      <a class="icon cart-icon" href="#">
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2">
+
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 .61h9.72a1 1 0 0 0 1-.76L23 6H6"/>
+
+        </svg>
+
+        <span class="cart-count">0</span>
 
       </a>
 
+      <!-- HAMBURGUESA -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     </div>
 
-    <!-- BENEFICIOS -->
-    <div class="hero-features">
+  </header>
 
-      <!-- HECHO CON AMOR -->
-      <div class="feature-item">
+  <!-- =========================
+       HERO
+  ========================== -->
 
-        <div class="feature-icon">
-          <img src="images/corazon.png" alt="Corazón">
+  <section class="hero">
+
+    <!-- IZQUIERDA -->
+    <div class="hero-left">
+
+      <span class="hero-tag">
+        PAPELERIA CREATIVA
+      </span>
+
+      <h1>
+        Detalles creativos que inspiran cada día
+      </h1>
+
+      <p class="hero-description">
+        El detalle perfecto para tus momentos especiales
+      </p>
+
+      <!-- BOTONES -->
+      <div class="hero-buttons">
+
+        <a href="#" class="catalog-btn">
+          Ver catálogo →
+        </a>
+
+        <a href="https://wa.me/584141740024"
+        target="_blank"
+        class="custom-btn">
+
+          <img src="images/whatsapp.png" alt="WhatsApp">
+
+          Personalizar tu pedido
+
+        </a>
+
+      </div>
+
+      <!-- BENEFICIOS -->
+      <div class="hero-features">
+
+        <!-- ITEM -->
+        <div class="feature-item">
+
+          <div class="feature-icon">
+            <img src="images/corazon.png" alt="Corazón">
+          </div>
+
+          <div class="feature-text">
+
+            <span class="top">
+              Hecho con amor
+            </span>
+
+            <span class="bottom">
+              Cada detalle cuenta
+            </span>
+
+          </div>
+
         </div>
 
-        <div class="feature-text">
+        <!-- ITEM -->
+        <div class="feature-item">
 
-          <span class="top">
-            Hecho con amor
-          </span>
+          <div class="feature-icon">
+            <img src="images/lapiz.png" alt="Lápiz">
+          </div>
 
-          <span class="bottom">
-            Cada detalle cuenta
-          </span>
+          <div class="feature-text">
+
+            <span class="top">
+              Personalizado
+            </span>
+
+            <span class="bottom">
+              A tu gusto y estilo
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="feature-item">
+
+          <div class="feature-icon">
+            <img src="images/caja.png" alt="Caja">
+          </div>
+
+          <div class="feature-text">
+
+            <span class="top">
+              Envíos nacionales
+            </span>
+
+            <span class="bottom">
+              Y envíos internacionales
+            </span>
+
+          </div>
 
         </div>
 
       </div>
 
-      <!-- PERSONALIZADO -->
-      <div class="feature-item">
+    </div>
 
-        <div class="feature-icon">
-          <img src="images/lapiz.png" alt="Lápiz">
-        </div>
+    <!-- DERECHA -->
+    <div class="hero-right">
 
-        <div class="feature-text">
+      <div class="hero-image-placeholder">
+      </div>
 
-          <span class="top">
-            Personalizado
-          </span>
+    </div>
 
-          <span class="bottom">
-            A tu gusto y estilo
-          </span>
+  </section>
 
+  <!-- =========================
+       CATEGORIAS
+  ========================== -->
+
+  <section class="categories-section">
+
+    <!-- TITULO -->
+    <div class="categories-title">
+
+      <div class="title-line"></div>
+
+      <div>
+
+        <h2>
+          Explora nuestras categorías
+        </h2>
+
+        <div class="yellow-line"></div>
+
+      </div>
+
+      <div class="title-line"></div>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="categories-grid">
+
+      <!-- CARD -->
+      <div class="category-card">
+
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Libros para colorear
         </div>
 
       </div>
 
-      <!-- ENVIOS -->
-      <div class="feature-item">
+      <!-- CARD -->
+      <div class="category-card">
 
-        <div class="feature-icon">
-          <img src="images/caja.png" alt="Caja">
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Cotillones
         </div>
 
-        <div class="feature-text">
+      </div>
 
-          <span class="top">
-            Envíos nacionales
-          </span>
+      <!-- CARD -->
+      <div class="category-card">
 
-          <span class="bottom">
-            Y envíos internacionales
-          </span>
+        <div class="category-image"></div>
 
+        <div class="category-name">
+          Bolsas para bisutería
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="category-card">
+
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Manteles y papelería
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="category-card">
+
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Toppers
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="category-card">
+
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Tags
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="category-card">
+
+        <div class="category-image"></div>
+
+        <div class="category-name">
+          Kits imprimibles
         </div>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-  <!-- DERECHA -->
-  <div class="hero-right">
+  <!-- =========================
+       SCRIPT
+  ========================== -->
 
-    <div class="hero-image-placeholder">
-      Imagen aquí
-    </div>
+  <script>
 
-  </div>
+    function toggleMenu(){
+      document.getElementById("menu").classList.toggle("show");
+    }
 
-</section>
-
-<script>
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
-}
-</script>
+  </script>
 
 </body>
 </html>
