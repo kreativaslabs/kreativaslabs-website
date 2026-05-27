@@ -203,8 +203,9 @@ body{
 /* BENEFICIOS */
 .hero-features{
   display:flex;
-  gap:42px;
-  flex-wrap:nowrap;
+  justify-content:space-between;
+  width:100%;
+  max-width:620px;
 }
 
 /* ITEM */
@@ -212,7 +213,7 @@ body{
   display:flex;
   align-items:flex-start;
   gap:10px;
-  min-width:160px;
+  width:190px;
 }
 
 /* ICONOS */
