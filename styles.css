@@ -475,8 +475,6 @@ body{
     height:220px;
   }
 
-}
-
 /* OCULTAR SCROLL HORIZONTAL */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
