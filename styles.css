@@ -281,7 +281,7 @@ body{
 
 .categories-section{
   background:white;
-  padding:85px 6%;
+  padding:70px 5%;
   overflow:hidden;
 }
 
@@ -290,21 +290,22 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:18px;
-  margin-bottom:45px;
+  gap:14px;
+  margin-bottom:35px;
 }
 
 .categories-title h2{
-  font-family:'KG Perfect', sans-serif;
-  font-size:32px;
+  font-family:'Lato', sans-serif;
+  font-size:28px;
+  font-weight:700;
   color:#1f1f1f;
   text-align:center;
 }
 
 /* DETALLE AZUL */
 .title-detail{
-  width:34px;
-  opacity:0.7;
+  width:18px;
+  opacity:0.9;
 }
 
 .reverse{
@@ -313,7 +314,7 @@ body{
 
 /* LINEA AMARILLA */
 .yellow-line{
-  width:90px;
+  width:70px;
   height:4px;
   background:#f5c84c;
   border-radius:20px;
@@ -323,49 +324,62 @@ body{
 /* SLIDER */
 .categories-slider{
   display:flex;
-  gap:22px;
+  gap:16px;
+
   overflow-x:auto;
+  overflow-y:hidden;
+
   scroll-behavior:smooth;
+
   padding-bottom:10px;
+
+  -webkit-overflow-scrolling:touch;
+
+  cursor:grab;
 }
 
-/* HIDE SCROLL */
+/* OCULTAR SCROLL */
 .categories-slider::-webkit-scrollbar{
   display:none;
 }
 
 /* CARD */
 .category-card{
-  min-width:220px;
-  background:rgba(58,151,201,0.06);
-  border-radius:28px;
+  min-width:170px;
+
+  background:#f8f3ea;
+
+  border-radius:18px;
+
   overflow:hidden;
-  transition:0.3s;
-  cursor:pointer;
+
   flex-shrink:0;
-  border:1px solid rgba(58,151,201,0.08);
+
+  transition:0.3s;
+
+  cursor:pointer;
 }
 
 .category-card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-4px);
 }
 
 /* IMAGEN */
 .category-image{
   width:100%;
-  height:220px;
-  background:#fafafa;
+  height:145px;
+  background:white;
 }
 
 /* NOMBRE */
 .category-name{
-  padding:18px;
+  padding:14px 10px;
   text-align:center;
   font-family:'Lato', sans-serif;
-  font-size:15px;
+  font-size:14px;
   font-weight:600;
   color:#1f1f1f;
-  background:rgba(245,200,76,0.12);
+  line-height:1.3;
 }
 
 /* =========================
@@ -434,16 +448,33 @@ body{
   }
 
   /* CATEGORIAS */
+  .categories-section{
+    padding:55px 5%;
+  }
+
+  .categories-title{
+    gap:10px;
+    margin-bottom:28px;
+  }
+
   .categories-title h2{
-    font-size:24px;
+    font-size:22px;
   }
 
   .title-detail{
-    width:26px;
+    width:15px;
   }
 
   .category-card{
-    min-width:180px;
+    min-width:145px;
+  }
+
+  .category-image{
+    height:120px;
+  }
+
+  .category-name{
+    font-size:13px;
   }
 
 }
