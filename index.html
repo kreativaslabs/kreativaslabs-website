@@ -1,317 +1,75 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- SECCIÓN CATEGORÍAS -->
+<section class="w-full py-12 bg-white overflow-hidden">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kreativas Labs</title>
+  <!-- TÍTULO -->
+  <div class="flex items-center justify-center gap-4 mb-8 px-4">
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- ICONO IZQUIERDO -->
+    <img 
+      src="/icons/detail-blue.png" 
+      alt="detalle azul"
+      class="w-5 h-5 object-contain opacity-80"
+    />
 
-<body>
+    <!-- TEXTO -->
+    <div class="text-center">
+      <h2 class="text-xl md:text-2xl font-semibold text-[#1D3557] tracking-wide">
+        Explora nuestras creaciones
+      </h2>
 
-  <!-- =========================
-       NAVBAR
-  ========================== -->
-
-  <header class="nav">
-
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="images/logo_principal.png" alt="Kreativas Labs">
+      <!-- Línea amarilla -->
+      <div class="w-24 h-[3px] bg-[#F4B400] mx-auto mt-2 rounded-full"></div>
     </div>
 
-    <!-- MENU -->
-    <nav class="menu" id="menu">
+    <!-- ICONO DERECHO -->
+    <img 
+      src="/icons/detail-blue.png" 
+      alt="detalle azul"
+      class="w-5 h-5 object-contain opacity-80 rotate-180"
+    />
 
-      <a href="#" class="active">Inicio</a>
-      <a href="#">Catálogo</a>
-      <a href="#">Sobre nosotros</a>
-      <a href="#">Contacto</a>
+  </div>
 
-    </nav>
+  <!-- CATEGORÍAS -->
+  <div class="relative">
 
-    <!-- ICONOS -->
-    <div class="nav-icons">
+    <div class="flex gap-4 overflow-x-auto whitespace-nowrap px-6 pb-4 scrollbar-hide snap-x snap-mandatory">
 
-      <!-- WHATSAPP -->
-      <a class="icon whatsapp-icon"
-      href="https://wa.me/584141740024"
-      target="_blank">
+      <!-- ITEM -->
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Cumpleaños
+      </button>
 
-        <img src="images/whatsapp.png" alt="WhatsApp">
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Bautizos
+      </button>
 
-      </a>
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Primera Comunión
+      </button>
 
-      <!-- CARRITO -->
-      <a class="icon cart-icon" href="#">
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Stickers
+      </button>
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2">
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Topper Cake
+      </button>
 
-          <circle cx="9" cy="21" r="1"/>
-          <circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a1 1 0 0 0 1 .61h9.72a1 1 0 0 0 1-.76L23 6H6"/>
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Cajas
+      </button>
 
-        </svg>
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Etiquetas
+      </button>
 
-        <span class="cart-count">0</span>
-
-      </a>
-
-      <!-- HAMBURGUESA -->
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    </div>
-
-  </header>
-
-  <!-- =========================
-       HERO
-  ========================== -->
-
-  <section class="hero">
-
-    <!-- IZQUIERDA -->
-    <div class="hero-left">
-
-      <span class="hero-tag">
-        PAPELERIA CREATIVA
-      </span>
-
-      <h1>
-        Detalles creativos que inspiran cada día
-      </h1>
-
-      <p class="hero-description">
-        El detalle perfecto para tus momentos especiales
-      </p>
-
-      <!-- BOTONES -->
-      <div class="hero-buttons">
-
-        <a href="#" class="catalog-btn">
-          Ver catálogo →
-        </a>
-
-        <a href="https://wa.me/584141740024"
-        target="_blank"
-        class="custom-btn">
-
-          <img src="images/whatsapp.png" alt="WhatsApp">
-
-          Personalizar tu pedido
-
-        </a>
-
-      </div>
-
-      <!-- BENEFICIOS -->
-      <div class="hero-features">
-
-        <!-- ITEM -->
-        <div class="feature-item">
-
-          <div class="feature-icon">
-            <img src="images/corazon.png" alt="Corazón">
-          </div>
-
-          <div class="feature-text">
-
-            <span class="top">
-              Hecho con amor
-            </span>
-
-            <span class="bottom">
-              Cada detalle cuenta
-            </span>
-
-          </div>
-
-        </div>
-
-        <!-- ITEM -->
-        <div class="feature-item">
-
-          <div class="feature-icon">
-            <img src="images/lapiz.png" alt="Lápiz">
-          </div>
-
-          <div class="feature-text">
-
-            <span class="top">
-              Personalizado
-            </span>
-
-            <span class="bottom">
-              A tu gusto y estilo
-            </span>
-
-          </div>
-
-        </div>
-
-        <!-- ITEM -->
-        <div class="feature-item">
-
-          <div class="feature-icon">
-            <img src="images/caja.png" alt="Caja">
-          </div>
-
-          <div class="feature-text">
-
-            <span class="top">
-              Envíos nacionales
-            </span>
-
-            <span class="bottom">
-              Y envíos internacionales
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
+      <button class="flex-shrink-0 snap-start px-6 py-3 rounded-full border border-[#D9E6F2] bg-[#F8FBFF] hover:bg-[#EAF4FF] transition-all duration-300 text-sm md:text-base font-medium text-[#1D3557]">
+        Invitaciones
+      </button>
 
     </div>
 
-    <!-- DERECHA -->
-    <div class="hero-right">
+  </div>
 
-      <div class="hero-image-placeholder">
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       CATEGORIAS
-  ========================== -->
-
-  <section class="categories-section">
-
-    <!-- TITULO -->
-    <div class="categories-title">
-
-      <div class="title-line"></div>
-
-      <div>
-
-        <h2>
-          Explora nuestras categorías
-        </h2>
-
-        <div class="yellow-line"></div>
-
-      </div>
-
-      <div class="title-line"></div>
-
-    </div>
-
-    <!-- GRID -->
-    <div class="categories-grid">
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Libros para colorear
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Cotillones
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Bolsas para bisutería
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Manteles y papelería
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Toppers
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Tags
-        </div>
-
-      </div>
-
-      <!-- CARD -->
-      <div class="category-card">
-
-        <div class="category-image"></div>
-
-        <div class="category-name">
-          Kits imprimibles
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =========================
-       SCRIPT
-  ========================== -->
-
-  <script>
-
-    function toggleMenu(){
-      document.getElementById("menu").classList.toggle("show");
-    }
-
-  </script>
-
-</body>
-</html>
+</section>
